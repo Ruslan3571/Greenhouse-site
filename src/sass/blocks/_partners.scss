@@ -1,0 +1,33 @@
+.partners {
+  padding: 150px 0;
+
+  @include media999px {
+    padding: 75px 0;
+  }
+
+  @include media768px {
+    padding: 40px 0;
+  }
+
+  &__content {
+  }
+
+  &__desc {
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    column-gap: 78px;
+    padding: 40px 0 0 0;
+  }
+}

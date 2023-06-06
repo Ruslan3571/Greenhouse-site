@@ -1,0 +1,30 @@
+{
+  "name": "Greenhouse-site",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://Ruslan3571.github.io/Greenhouse-site",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /Greenhouse-site/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ruslan3571/Greenhouse-site.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ruslan3571/Greenhouse-site/issues"
+  },
+  "dependencies": {
+    "modern-normalize": "^2.0.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

@@ -1,0 +1,72 @@
+.subscribe {
+  padding: 80px 0;
+  background-color: $bg;
+
+  @include media999px {
+    padding: 40px 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+  }
+
+  &__text {
+    margin-bottom: 48px;
+  }
+}
+
+.subscribe {
+  &__form {
+    width: 600px;
+    height: 72px;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 8px 8px 24px;
+    border-radius: 50px;
+    border: 1px solid #d4cbc4;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-image: url('../img/icons/sms.svg');
+      background-repeat: no-repeat;
+    }
+
+    @include media768px {
+      width: auto;
+    }
+
+    @include media525px {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+  }
+
+  &__form-input {
+    padding-left: 16px;
+  }
+
+  &__form-btn {
+    margin-left: auto;
+    padding: 18px 32px;
+    background-color: $accent;
+    border-radius: 50px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $white;
+
+    @include media525px {
+      margin-left: 0;
+    }
+  }
+}

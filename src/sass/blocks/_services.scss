@@ -1,0 +1,82 @@
+.services {
+  padding: 80px 0;
+  margin-bottom: 100px;
+  background-color: $bg-light;
+
+  @include media999px {
+    padding: 40px 0;
+  }
+
+  @include media768px {
+    padding: 20px 0;
+  }
+  &__content {
+  }
+
+  &__desc {
+  }
+
+  &__title {
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.card {
+  width: 380px;
+  padding: 40px;
+  background-color: $white;
+  border-radius: 15px;
+
+  &__img-wrapper {
+    display: inline-block;
+    margin-bottom: 24px;
+    padding: 16px;
+    background: #eef3f8;
+
+    box-shadow: 0px 17px 60px -7px rgba(35, 37, 84, 0.05);
+    border-radius: 15px;
+  }
+
+  &:nth-child(2) {
+    // Вибираємо другу карту
+    & .card__img-wrapper {
+      background: #fcf8ee; // Змінюємо бекграунд
+    }
+  }
+
+  &:nth-child(3) {
+    & .card__img-wrapper {
+      background: #eef8fb;
+    }
+  }
+
+  &__img {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    color: $dark;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    color: $accent;
+  }
+}
